@@ -8,20 +8,25 @@ import "./assets/img/4geeks.ico";
 window.onload = () => {
   document.querySelector("#the-excuse").innerHTML = generateExcuse();
 };
-//arrays 
+//arrays
 let generateExcuse = () => {
   let pronoun = ["A", "The"];
-  let subject = ["cat", "racoon", "dog", "bear", "ghost"];
-  let actions = ["ate my", "destroyed my", "took my", "stole my"];
-  let object = ["homework", "phone", "pizza", "favorite hat"];
-  let location = ["in my house", "from my car", "from my room", "in the woods"];
-//randomize
+  let subject = ["katze", "hund", "kuh", "biene", "ratte"];
+  let actions = ["kill my", "destroyed my", "pee my", "stole my"];
+  let object = ["hair", "eyes", "fingers", "nose"];
+  let location = [
+    "in my housetree",
+    "from my flower",
+    "from doomsday",
+    "in the sea"
+  ];
+  //randomize
   let pronounIndex = Math.floor(Math.random() * pronoun.length);
   let subjectIndex = Math.floor(Math.random() * subject.length);
   let actionsIndex = Math.floor(Math.random() * actions.length);
   let objectIndex = Math.floor(Math.random() * object.length);
   let locationIndex = Math.floor(Math.random() * location.length);
-//concatenate
+  //concatenate
   return (
     pronoun[pronounIndex] +
     " " +

@@ -12,11 +12,11 @@ window.onload = () => {
 let generateExcuse = () => {
   let pronoun = ["A", "The"];
   let subject = ["katze", "hund", "kuh", "biene", "ratte"];
-  let actions = ["kill my", "destroyed my", "pee my", "stole my"];
+  let actions = ["kill my", "destroyed my", "pees my", "stole my"];
   let object = ["hair", "eyes", "fingers", "nose"];
   let location = [
-    "in my housetree",
-    "from my flower",
+    "in the housetree",
+    "from the flower",
     "from doomsday",
     "in the sea"
   ];
